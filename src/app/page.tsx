@@ -146,15 +146,22 @@ export default function Home() {
             <span className="hero-atmosphere__grid" />
           </div>
 
-          <div className="hero-copy">
+          <div className="hero-stage">
             <p className="eyebrow hero-eyebrow">
               <span className="eyebrow-dot" />
               An original two-version fan game concept
             </p>
             <h1 id="hero-title">
+              <span className="hero-title__pokemon">Pokémon</span>
+              <span className="hero-title__fracture">Fracture</span>
+              <span className="hero-title__revolt">
+                <i>&amp;</i> Revolt
+              </span>
+            </h1>
+            <p className="hero-thesis">
               The journey you know.
               <span>At the moment everything changes.</span>
-            </h1>
+            </p>
             <p className="hero-lede">
               Set out to become Champion in a beautiful modern region—then find
               your closest bonds tested when a controversial movement divides
@@ -169,31 +176,31 @@ export default function Home() {
                 Choose a version
               </a>
             </div>
-          </div>
 
-          <div className="hero-art-wrap" data-reveal>
-            <div className="hero-art-frame">
-              <Image
-                className="hero-art"
-                src="/logo.png"
-                alt="Key art for Pokémon Fracture and Pokémon Revolt showing a divided civic region: a cool blue city on one side and a warm red capital on the other, split by a glowing fracture."
-                fill
-                priority
-                sizes="(max-width: 900px) 96vw, 92vw"
-              />
-              <div className="hero-art-sheen" aria-hidden="true" />
-              <div className="hero-art-hud hero-art-hud--left">
-                <span>PF/R</span>
-                <small>Concept key art</small>
+            <div className="hero-art-wrap">
+              <div className="hero-art-frame">
+                <Image
+                  className="hero-art"
+                  src="/logo.png"
+                  alt="Key art for Pokémon Fracture and Pokémon Revolt showing a divided civic region: a cool blue city on one side and a warm red capital on the other, split by a glowing fracture."
+                  fill
+                  priority
+                  sizes="(max-width: 900px) 100vw, 58vw"
+                />
+                <div className="hero-art-sheen" aria-hidden="true" />
+                <div className="hero-art-hud hero-art-hud--left">
+                  <span>PF/R</span>
+                  <small>Concept key art</small>
+                </div>
+                <div className="hero-art-hud hero-art-hud--right">
+                  <span>Two paths</span>
+                  <small>One shared fate</small>
+                </div>
+                <span className="frame-corner frame-corner--tl" aria-hidden="true" />
+                <span className="frame-corner frame-corner--tr" aria-hidden="true" />
+                <span className="frame-corner frame-corner--bl" aria-hidden="true" />
+                <span className="frame-corner frame-corner--br" aria-hidden="true" />
               </div>
-              <div className="hero-art-hud hero-art-hud--right">
-                <span>Two paths</span>
-                <small>One shared fate</small>
-              </div>
-              <span className="frame-corner frame-corner--tl" aria-hidden="true" />
-              <span className="frame-corner frame-corner--tr" aria-hidden="true" />
-              <span className="frame-corner frame-corner--bl" aria-hidden="true" />
-              <span className="frame-corner frame-corner--br" aria-hidden="true" />
             </div>
           </div>
 
