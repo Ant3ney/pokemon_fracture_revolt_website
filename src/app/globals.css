@@ -451,13 +451,16 @@ svg {
 
 .hero h1 .hero-title__pokemon {
   display: block;
-  margin: 0 0 1.25em 0.1em;
-  color: #e2e5ed;
-  font-family: var(--font-body), sans-serif;
-  font-size: 0.11em;
-  font-weight: 800;
-  letter-spacing: 0.44em;
-  line-height: 1;
+  width: max-content;
+  margin: 0 0 0.64em 0.06em;
+  background: linear-gradient(90deg, #f7f9ff, #d9dfff 58%, #ffd8bf);
+  background-clip: text;
+  color: transparent;
+  font-family: var(--font-display), sans-serif;
+  font-size: 0.3em;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  line-height: 0.9;
   text-transform: uppercase;
 }
 
@@ -2422,8 +2425,10 @@ svg {
   }
 
   .hero h1 .hero-title__pokemon {
-    margin-bottom: 1.15em;
-    font-size: 0.115em;
+    margin-right: auto;
+    margin-bottom: 0.68em;
+    margin-left: auto;
+    font-size: 0.29em;
   }
 
   .hero-thesis {
@@ -2632,8 +2637,15 @@ svg {
     padding-bottom: clamp(20px, 3.5dvh, 36px);
   }
 
+  .site-header {
+    border-color: rgb(255 255 255 / 8%);
+    background: linear-gradient(to bottom, rgb(7 9 14 / 78%), rgb(7 9 14 / 52%));
+    backdrop-filter: blur(14px) saturate(125%);
+  }
+
   .has-scrolled .site-header {
     height: 60px;
+    background: rgb(7 9 14 / 88%);
   }
 
   .hero-stage {
@@ -2782,7 +2794,7 @@ svg {
   }
 
   .version-experience {
-    height: clamp(390px, 61dvh, 560px);
+    height: clamp(420px, 61dvh, 560px);
     min-height: 0;
     margin-top: clamp(20px, 3.5dvh, 42px);
   }
