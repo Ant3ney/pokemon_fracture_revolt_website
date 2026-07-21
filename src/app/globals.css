@@ -2632,6 +2632,10 @@ svg {
     padding-bottom: clamp(20px, 3.5dvh, 36px);
   }
 
+  .has-scrolled .site-header {
+    height: 60px;
+  }
+
   .hero-stage {
     min-height: 0;
   }
@@ -2670,9 +2674,9 @@ svg {
   .vision,
   .story,
   .conviction {
-    padding-top: clamp(32px, 6dvh, 70px);
+    padding-top: clamp(76px, 10dvh, 96px);
     padding-right: max(4vw, calc((100vw - 1440px) / 2 + 4vw));
-    padding-bottom: clamp(32px, 6dvh, 70px);
+    padding-bottom: clamp(18px, 3dvh, 30px);
     padding-left: max(4vw, calc((100vw - 1440px) / 2 + 4vw));
   }
 
@@ -2757,7 +2761,7 @@ svg {
   }
 
   .versions {
-    padding: clamp(38px, 6dvh, 72px) 0;
+    padding: clamp(76px, 10dvh, 96px) 0 clamp(18px, 3dvh, 30px);
   }
 
   .versions-heading {
@@ -3004,26 +3008,26 @@ svg {
 
   .world-copy {
     height: 100%;
-    padding: clamp(32px, 5dvh, 65px) clamp(40px, 5.5vw, 90px);
+    padding: clamp(74px, 9.5dvh, 92px) clamp(40px, 5.5vw, 90px) clamp(18px, 3dvh, 30px);
   }
 
   .world-copy h2 {
-    margin: clamp(15px, 2.5dvh, 26px) 0 clamp(16px, 2.8dvh, 30px);
-    font-size: clamp(3.7rem, min(7vw, 9.5dvh), 6.5rem);
+    margin: clamp(10px, 1.8dvh, 20px) 0 clamp(11px, 2dvh, 22px);
+    font-size: clamp(3.25rem, min(6.2vw, 7.7dvh), 5.7rem);
   }
 
   .world-copy > p {
     font-size: clamp(0.68rem, min(0.9vw, 1.6dvh), 0.84rem);
-    line-height: 1.6;
+    line-height: 1.48;
   }
 
   .world-rules {
-    margin-top: clamp(18px, 3dvh, 34px);
+    margin-top: clamp(13px, 2.2dvh, 25px);
   }
 
   .world-rules li {
     gap: clamp(13px, 1.7vw, 23px);
-    padding: clamp(10px, 1.7dvh, 17px) 0;
+    padding: clamp(7px, 1.15dvh, 12px) 0;
   }
 
   .world-rules strong {
@@ -3037,7 +3041,7 @@ svg {
 
   .palette {
     gap: clamp(7px, 1.2dvh, 12px);
-    margin-top: clamp(18px, 3dvh, 34px);
+    margin-top: clamp(12px, 2dvh, 22px);
   }
 
   .palette > div {
