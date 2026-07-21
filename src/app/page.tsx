@@ -316,7 +316,7 @@ export default function Home() {
           </ol>
         </section>
 
-        <section className="bastion" aria-labelledby="bastion-title">
+        <section className="bastion" id="bastion" aria-labelledby="bastion-title">
           <div className="bastion-grid" aria-hidden="true" />
           <div className="bastion-banner bastion-banner--one" aria-hidden="true">
             <FractureMark />
@@ -369,7 +369,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="conviction section-shell" aria-labelledby="conviction-title">
+        <section className="conviction section-shell" id="conviction" aria-labelledby="conviction-title">
           <div className="conviction-intro" data-reveal>
             <p className="eyebrow">The strength to stand</p>
             <h2 id="conviction-title">
@@ -508,7 +508,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="systems section-shell" aria-labelledby="systems-title">
+        <section className="systems section-shell" id="systems" aria-labelledby="systems-title">
           <div className="systems-card" data-reveal>
             <div className="systems-card__grid" aria-hidden="true" />
             <div className="systems-card__index">03 / Beyond the campaign</div>
@@ -541,7 +541,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="closing" aria-labelledby="closing-title">
+        <section className="closing" id="closing" aria-labelledby="closing-title">
           <div className="closing-light closing-light--blue" aria-hidden="true" />
           <div className="closing-light closing-light--red" aria-hidden="true" />
           <div className="closing-crack" aria-hidden="true" />
