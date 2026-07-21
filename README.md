@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokémon Fracture & Revolt
 
-## Getting Started
+A cinematic showcase site for the **Pokémon Fracture & Revolt** fan game concept. The experience presents the dual-version identity, core story arc, Team Bastion conflict, friendship and faith themes, visual direction, soundtrack, and future Poke Economy systems layer.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+npm run start
+```
 
-## Learn More
+Set `NEXT_PUBLIC_SITE_URL` to the final production origin when deploying so Open Graph and Twitter image URLs resolve to the live site.
 
-To learn more about Next.js, take a look at the following resources:
+## Project structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app/page.tsx` — page content and semantic structure
+- `src/app/globals.css` — responsive art direction, layout, and motion
+- `src/components/version-selector.tsx` — interactive Fracture/Revolt experience
+- `src/components/ambient-experience.tsx` — scroll progress and reveal behavior
+- `public/logo.png` — supplied concept key art
+- `docs/project-context/` — original brief, art direction, and project resources
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Attribution
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is an independent, non-commercial fan concept. Pokémon and related trademarks belong to Nintendo, Game Freak, and The Pokémon Company.
