@@ -477,13 +477,6 @@ export default function Home() {
 
           <div className="prologue-shell section-shell">
             <div className="prologue-copy" data-reveal>
-              <div className="prologue-status">
-                <span>
-                  <i />
-                  Playable prologue
-                </span>
-                <span>Opening sequence / 001</span>
-              </div>
               <p className="eyebrow">Your Trainer Record is waiting</p>
               <h2 id="prologue-title">
                 Before the region breaks,
@@ -493,6 +486,29 @@ export default function Home() {
                 Step into the opening of Fracture &amp; Revolt. Meet Professor
                 Cypress, complete your Trainer Record, and make the first choices
                 that turn this world into <em>your</em> story.
+              </p>
+
+              <a
+                className="prologue-button"
+                href={dialogPrototypeUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Start your Trainer Record in the playable Fracture and Revolt prologue, opens in a new tab"
+              >
+                <span className="prologue-button__label">
+                  <small>Playable prologue</small>
+                  <strong>Start your Trainer Record</strong>
+                  <span>
+                    Meet Professor Cypress <i aria-hidden="true">·</i> Answer 3
+                    questions
+                  </span>
+                </span>
+                <span className="prologue-button__arrow">
+                  <ArrowIcon />
+                </span>
+              </a>
+              <p className="prologue-cta-note">
+                Three questions. One first step.
               </p>
 
               <ul className="prologue-beats" aria-label="Prologue features">
@@ -549,34 +565,6 @@ export default function Home() {
                 <span>Branching dialogue</span>
                 <span>Music enabled</span>
               </div>
-            </div>
-
-            <div className="prologue-launch" data-reveal>
-              <div className="prologue-launch__note">
-                <span>Interactive opening</span>
-                <strong>Three questions. One first step.</strong>
-              </div>
-
-              <a
-                className="prologue-button"
-                href={dialogPrototypeUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Begin the Fracture and Revolt prologue in a new tab"
-              >
-                <span className="prologue-button__play">
-                  <PlayIcon />
-                </span>
-                <span className="prologue-button__label">
-                  <small>Enter the world</small>
-                  <strong>Begin the prologue</strong>
-                </span>
-                <span className="prologue-button__arrow">
-                  <ArrowIcon />
-                </span>
-              </a>
-
-              <p>Opens the Fracture × Revolt dialog prototype</p>
             </div>
           </div>
         </section>
