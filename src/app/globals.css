@@ -570,36 +570,6 @@ svg {
   pointer-events: none;
 }
 
-.hero-art-hud {
-  position: absolute;
-  top: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 8px 11px;
-  border: 1px solid rgb(255 255 255 / 20%);
-  background: rgb(6 8 13 / 56%);
-  color: white;
-  backdrop-filter: blur(12px);
-}
-
-.hero-art-hud--left { left: 20px; }
-.hero-art-hud--right { right: 20px; }
-
-.hero-art-hud span,
-.hero-art-hud small {
-  font-size: 0.58rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.hero-art-hud small {
-  color: #b3b7c0;
-  font-weight: 600;
-}
-
 .frame-corner {
   position: absolute;
   width: 28px;
@@ -2460,11 +2430,6 @@ svg {
   .hero-art {
     object-position: center;
   }
-
-  .hero-art-hud { top: 10px; padding: 6px 8px; }
-  .hero-art-hud--left { left: 10px; }
-  .hero-art-hud--right { right: 10px; }
-  .hero-art-hud small { display: none; }
 
   .hero-footnote {
     justify-content: flex-start;

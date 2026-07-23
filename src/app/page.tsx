@@ -188,14 +188,6 @@ export default function Home() {
                   sizes="(max-width: 900px) 100vw, 58vw"
                 />
                 <div className="hero-art-sheen" aria-hidden="true" />
-                <div className="hero-art-hud hero-art-hud--left">
-                  <span>PF/R</span>
-                  <small>Concept key art</small>
-                </div>
-                <div className="hero-art-hud hero-art-hud--right">
-                  <span>Two paths</span>
-                  <small>One shared fate</small>
-                </div>
                 <span className="frame-corner frame-corner--tl" aria-hidden="true" />
                 <span className="frame-corner frame-corner--tr" aria-hidden="true" />
                 <span className="frame-corner frame-corner--bl" aria-hidden="true" />
