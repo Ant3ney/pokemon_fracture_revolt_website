@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "/art/fracture-revolt-duo-banner.png",
         width: 1672,
         height: 941,
-        alt: "Pokémon Fracture and Revolt concept key art",
+        alt: "Pokémon Fracture and Revolt dual-version key art",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pokémon Fracture & Revolt",
     description: "One region. Two versions. A future worth fighting for.",
-    images: ["/logo.png"],
+    images: ["/art/fracture-revolt-duo-banner.png"],
   },
 };
 

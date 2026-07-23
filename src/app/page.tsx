@@ -181,10 +181,10 @@ export default function Home() {
               <div className="hero-art-frame">
                 <Image
                   className="hero-art"
-                  src="/logo.png"
+                  src="/art/fracture-revolt-duo-banner.png"
                   alt="Key art for Pokémon Fracture and Pokémon Revolt showing a divided civic region: a cool blue city on one side and a warm red capital on the other, split by a glowing fracture."
                   fill
-                  priority
+                  preload
                   sizes="(max-width: 900px) 100vw, 58vw"
                 />
                 <div className="hero-art-sheen" aria-hidden="true" />
@@ -400,8 +400,8 @@ export default function Home() {
         <section className="world" id="world" aria-labelledby="world-title">
           <div className="world-image" data-reveal>
             <Image
-              src="/logo.png"
-              alt="A stylized civic capital at golden hour with banners, public squares, stone architecture, gardens, and a glowing fracture dividing cool and warm city districts."
+              src="/art/fracture-revolt-duo-banner.png"
+              alt="Pokémon Fracture and Pokémon Revolt key art showing their legendary Pokémon in cool and warm city districts divided by a glowing fracture."
               fill
               sizes="(max-width: 900px) 100vw, 58vw"
             />

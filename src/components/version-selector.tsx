@@ -9,14 +9,20 @@ const versions = {
     title: "Hold what can be repaired.",
     copy: "Cool stone, silver light, and violet fractures frame a region searching for order. Fracture asks what is worth preserving—and whether unity can exist without confronting the lines beneath it.",
     motifs: ["Division", "Balance", "Repair"],
-    position: "left center",
+    image: "/art/fracture-cover.png",
+    imageAlt:
+      "Pokémon Fracture cover art featuring its legendary Pokémon above a divided blue city.",
+    position: "center",
   },
   revolt: {
     eyebrow: "RV—02 / The rising path",
     title: "Change what can no longer stand.",
     copy: "Gold sunlight, red banners, and crowded civic squares give the region a louder pulse. Revolt asks who gets heard, what reform demands, and when public energy becomes impossible to contain.",
     motifs: ["Voice", "Movement", "Reform"],
-    position: "right center",
+    image: "/art/revolt-cover.png",
+    imageAlt:
+      "Pokémon Revolt cover art featuring its legendary Pokémon above a red-bannered capital.",
+    position: "center",
   },
 } as const;
 
@@ -43,8 +49,8 @@ export function VersionSelector() {
     <div className="version-experience" data-version={activeVersion} data-reveal>
       <div className="version-experience__image">
         <Image
-          src="/logo.png"
-          alt=""
+          src={active.image}
+          alt={active.imageAlt}
           fill
           sizes="(max-width: 900px) 100vw, 56vw"
           style={{ objectPosition: active.position }}
