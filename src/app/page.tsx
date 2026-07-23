@@ -58,6 +58,13 @@ const convictions = [
   },
 ];
 
+const dialogPrototypeUrl =
+  process.env.NEXT_PUBLIC_DIALOG_PROTOTYPE_URL ??
+  "https://pokemon-fr-dialog-proto.vercel.app/";
+
+const dialogPreviewImage =
+  "https://raw.githubusercontent.com/Ant3ney/pokemon_fr_dialog_proto/main/public/game/dialog-background.png";
+
 function FractureMark({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -130,6 +137,7 @@ export default function Home() {
           <a href="#story">Story</a>
           <a href="#versions">Versions</a>
           <a href="#world">World</a>
+          <a href="#prologue">Prologue</a>
         </nav>
 
         <a className="header-action" href="#soundtrack">
@@ -455,6 +463,124 @@ export default function Home() {
           </div>
         </section>
 
+        <section
+          className="prologue"
+          id="prologue"
+          aria-labelledby="prologue-title"
+        >
+          <div className="prologue-atmosphere" aria-hidden="true">
+            <span className="prologue-atmosphere__blue" />
+            <span className="prologue-atmosphere__red" />
+            <span className="prologue-atmosphere__grid" />
+            <span className="prologue-atmosphere__fracture" />
+          </div>
+
+          <div className="prologue-shell section-shell">
+            <div className="prologue-copy" data-reveal>
+              <div className="prologue-status">
+                <span>
+                  <i />
+                  Playable prologue
+                </span>
+                <span>Opening sequence / 001</span>
+              </div>
+              <p className="eyebrow">Your Trainer Record is waiting</p>
+              <h2 id="prologue-title">
+                Before the region breaks,
+                <span>your journey begins.</span>
+              </h2>
+              <p className="prologue-copy__lede">
+                Step into the opening of Fracture &amp; Revolt. Meet Professor
+                Cypress, complete your Trainer Record, and make the first choices
+                that turn this world into <em>your</em> story.
+              </p>
+
+              <ul className="prologue-beats" aria-label="Prologue features">
+                <li>
+                  <strong>01</strong>
+                  <span>Meet Professor Cypress</span>
+                </li>
+                <li>
+                  <strong>02</strong>
+                  <span>Answer three Trainer questions</span>
+                </li>
+                <li>
+                  <strong>03</strong>
+                  <span>Begin your own record</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="prologue-console" data-reveal>
+              <div className="prologue-console__topline">
+                <span>
+                  <i />
+                  Regional League uplink
+                </span>
+                <span>Trainer orientation</span>
+              </div>
+
+              <div className="prologue-console__screen">
+                <Image
+                  className="prologue-console__image"
+                  src={dialogPreviewImage}
+                  alt="Professor Cypress stands at a lectern between Fracture and Revolt banners in the sunlit Regional League briefing room."
+                  fill
+                  sizes="(max-width: 900px) 92vw, 57vw"
+                />
+                <div className="prologue-console__colorwash" aria-hidden="true" />
+                <div className="prologue-console__scanlines" aria-hidden="true" />
+
+                <div className="prologue-dialog">
+                  <div className="prologue-dialog__speaker">
+                    <span>Professor Cypress</span>
+                    <small>Regional League</small>
+                  </div>
+                  <blockquote>
+                    There are no wrong answers here. Only answers you may
+                    understand differently later.
+                  </blockquote>
+                  <span className="prologue-dialog__next" aria-hidden="true" />
+                </div>
+              </div>
+
+              <div className="prologue-console__footline">
+                <span>Touch · click · keyboard</span>
+                <span>Branching dialogue</span>
+                <span>Music enabled</span>
+              </div>
+            </div>
+
+            <div className="prologue-launch" data-reveal>
+              <div className="prologue-launch__note">
+                <span>Interactive opening</span>
+                <strong>Three questions. One first step.</strong>
+              </div>
+
+              <a
+                className="prologue-button"
+                href={dialogPrototypeUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Begin the Fracture and Revolt prologue in a new tab"
+              >
+                <span className="prologue-button__play">
+                  <PlayIcon />
+                </span>
+                <span className="prologue-button__label">
+                  <small>Enter the world</small>
+                  <strong>Begin the prologue</strong>
+                </span>
+                <span className="prologue-button__arrow">
+                  <ArrowIcon />
+                </span>
+              </a>
+
+              <p>Opens the Fracture × Revolt dialog prototype</p>
+            </div>
+          </div>
+        </section>
+
         <section className="soundtrack section-shell" id="soundtrack" aria-labelledby="soundtrack-title">
           <div className="soundtrack-copy" data-reveal>
             <div className="soundtrack-kicker">
@@ -572,6 +698,7 @@ export default function Home() {
         <div className="site-footer__links">
           <a href="#vision">Vision</a>
           <a href="#story">Story</a>
+          <a href="#prologue">Prologue</a>
           <a href="#soundtrack">Music</a>
         </div>
       </footer>
